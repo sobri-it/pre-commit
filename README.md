@@ -10,3 +10,17 @@ This project define following hooks:
 - **rust-build**: Build the rust package.
 - **rust-no-warnings**: Build the rust package and error on warnings.
 - **rust-clippy**: Lint rust source files.
+
+## Example
+
+Below a how those hooks could be used:
+
+```yaml
+repos:
+- hooks:
+  - id: rust-fmt
+  - id: rust-clippy
+  - id: rust-cargo-check
+  repo: https://github.com/sobri-it/pre-commit
+  rev: <tag>
+```
