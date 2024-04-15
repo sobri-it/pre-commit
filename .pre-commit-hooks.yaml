@@ -1,0 +1,36 @@
+- id: rust-fmt
+  name: fmt
+  description: Format files with cargo fmt.
+  entry: cargo fmt
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: rust-cargo-check
+  name: cargo check
+  description: Check the package for errors.
+  entry: cargo check
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: rust-build
+  name: build
+  description: Build the package.
+  entry: cargo build
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: rust-no-warnings
+  name: no-warnings
+  description: Build the package and error on warnings.
+  entry: cargo rustc -- -D warnings
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: rust-clippy
+  name: clippy
+  description: Lint rust source files.
+  entry: cargo clippy
+  language: system
+  args: ["--", "-D", "warnings"]
+  types: [rust]
+  pass_filenames: false
