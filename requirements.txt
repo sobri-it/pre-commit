@@ -1,3 +1,4 @@
 commitizen==3.28.0
 cz-conventional-gitmoji==0.3.2
 pre-commit==3.7.1
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
