@@ -11,6 +11,7 @@ This project define following hooks:
 - **rust-no-warnings**: Build the rust package and error on warnings.
 - **rust-clippy**: Lint rust source files.
 - **bicep-fmt**: Format bicep files, requires az bicep command installed.
+- **bicep-lint**: Lint bicep files, requires az bicep command installed.
 
 ## Example
 
@@ -23,6 +24,7 @@ repos:
   - id: rust-clippy
   - id: rust-cargo-check
   - id: bicep-fmt
+  - id: bicep-lint
   repo: https://github.com/sobri-it/pre-commit
   rev: <tag>
 ```
