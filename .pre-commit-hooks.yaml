@@ -34,3 +34,10 @@
   args: ["--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
+- id: bicep-fmt
+  name: Format Bicep Files
+  description: This hook format all bicep files.
+  entry: bash -c 'for n in $(seq 0 "$#"); do az bicep format --file "${!n}"; done'
+  require_serial: true
+  language: system
+  files: \.bicep$
