@@ -1,3 +1,21 @@
+## 0.3.0 (2024-09-13)
+
+### ✨ Features
+
+- add bicep lint hook
+- add bicep format hook
+
+### 💚👷 CI & Build
+
+- fix renovate commit messages
+- add renovate.json
+- fix bump ignore condition
+- bump checkout github action version
+
+### 📝💡 Documentation
+
+- add hooks usage example
+
 ## 0.2.0 (2024-04-15)
 
 ### ✨ Features
