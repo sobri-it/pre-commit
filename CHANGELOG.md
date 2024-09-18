@@ -1,3 +1,9 @@
+## 0.3.1 (2024-09-18)
+
+### 🐛🚑️ Fixes
+
+- add missing support for bicepparam files
+
 ## 0.3.0 (2024-09-13)
 
 ### ✨ Features
