@@ -40,11 +40,13 @@
   entry: bash -c 'for n in $(seq 0 "$#"); do az bicep format --file "${!n}"; done'
   require_serial: true
   language: system
-  files: \.bicep$
+  types: [file]
+  files: \.(bicepparam$|bicep)$
 - id: bicep-lint
   name: Lint Bicep Files
   description: This hook lint all bicep files.
   entry: bash -c 'for n in $(seq 0 "$#"); do az bicep lint --file "${!n}"; done'
   require_serial: true
   language: system
-  files: \.bicep$
+  types: [file]
+  files: \.(bicepparam$|bicep)$
