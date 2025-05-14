@@ -50,3 +50,9 @@
   language: system
   types: [file]
   files: \.(bicepparam$|bicep)$
+- id: prettier
+  name: prettier
+  description: Format files with prettier.
+  entry: prettier --ignore-unknown --write
+  language: node
+  additional_dependencies: ["prettier@latest"]

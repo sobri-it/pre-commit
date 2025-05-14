@@ -12,6 +12,7 @@ This project define following hooks:
 - **rust-clippy**: Lint rust source files.
 - **bicep-fmt**: Format bicep files, requires az bicep command installed.
 - **bicep-lint**: Lint bicep files, requires az bicep command installed.
+- **prettier**: Format files with prettier, use latest prettier version.
 
 ## Example
 
@@ -25,6 +26,7 @@ repos:
   - id: rust-cargo-check
   - id: bicep-fmt
   - id: bicep-lint
+  - id: prettier
   repo: https://github.com/sobri-it/pre-commit
   rev: <tag>
 ```
