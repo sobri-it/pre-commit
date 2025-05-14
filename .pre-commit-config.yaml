@@ -6,7 +6,7 @@ repos:
   - id: detect-private-key
   - id: check-added-large-files
   repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.6.0
+  rev: v5.0.0
 - hooks:
   - id: commitizen
     additional_dependencies: ['cz-conventional-gitmoji']
@@ -14,6 +14,6 @@ repos:
     additional_dependencies: ['cz-conventional-gitmoji']
     stages:
     - post-commit
-    - push
+    - pre-push
   repo: https://github.com/commitizen-tools/commitizen
-  rev: v3.22.0
+  rev: v4.7.0
