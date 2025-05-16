@@ -1,3 +1,17 @@
+## 0.4.0 (2025-05-16)
+
+### ✨ Features
+
+- add prettier pre-commit hook
+
+### 📌➕⬇️➖⬆️ Dependencies
+
+- upgrade pre-commit config dependencies
+
+### 🔧🔨📦️ Configuration, Scripts, Packages
+
+- add python configuration file
+
 ## 0.3.1 (2024-09-18)
 
 ### 🐛🚑️ Fixes
