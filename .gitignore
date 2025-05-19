@@ -3,3 +3,6 @@
 # Added by cargo
 
 /target
+
+# Added by node
+node_modules
